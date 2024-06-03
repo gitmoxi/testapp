@@ -1,0 +1,20 @@
+{
+  "cluster" : "test",
+  "serviceName": "nginx-svc",
+  "taskDefinition": "arn:aws:ecs:us-east-2:381491902283:task-definition/nginx-task-definition:2",
+  "desiredCount": 1,
+  "launchType": "FARGATE",
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": [
+	"subnet-0402dfe3a12ec4136",
+	"subnet-0844352edb38a385b",
+	"subnet-09cbc7bda54202df0"
+      ],
+      "assignPublicIp": "ENABLED",
+      "securityGroups": [
+        "sg-0198019c2b492f273"
+      ]	
+    }
+  }
+}
