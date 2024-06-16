@@ -1,7 +1,6 @@
 {
   "cluster" : "test",
-  "serviceName": "nginx-svc",
-  "taskDefinition": "arn:aws:ecs:us-east-2:381491902283:task-definition/nginx-task-definition:2",
+  "serviceName": "httpd-svc",
   "desiredCount": 1,
   "launchType": "FARGATE",
   "networkConfiguration": {

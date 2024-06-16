@@ -1,5 +1,5 @@
 {
-    "family": "nginx-task-definition",
+    "family" : "httpd",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
