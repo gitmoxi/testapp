@@ -3,7 +3,7 @@
   "serviceName": "httpd-svc",
   "desiredCount": 2,
   "deploymentController": {
-    "type": "ECS"
+    "type": "EXTERNAL"
   },
   "networkConfiguration": {
     "awsvpcConfiguration": {
