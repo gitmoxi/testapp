@@ -1,0 +1,21 @@
+{
+    "deploymentConfiguration":{
+        "trafficRoutingConfig": {
+            "percent": 123,
+            "waitInterval": 123,
+            "type" : "ALL_AT_ONCE | CANARY | LINEAR"
+        },
+        "alarms": {
+            "alarmNames": [
+                "string"
+            ],
+            "enable": true,
+            "rollback": false
+        }
+    },
+    "gmDeploymentCircuitBreaker":{
+        "numberOfTaskFailures": 123,
+        "timeoutUponTaskFailures": 123,
+        "overallTimeout": 123
+    }
+}
