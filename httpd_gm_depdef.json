@@ -1,10 +1,15 @@
 {
     "deploymentConfiguration":{
-        "trafficRoutingConfig": {
-            "percent": 123,
-            "waitInterval": 123,
-            "type" : "ALL_AT_ONCE | CANARY | LINEAR"
+        "trafficShiftingEnabled": true,
+        "trafficShiftingConfig": {
+            "percent": 50,
+            "waitInterval": 60,
+            "type" : "CANARY"
         },
+        "targetGroupArns": [
+            "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
+            "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/test-tg/4116dc0c8c0fe683"
+        ],
         "alarms": {
             "alarmNames": [
                 "string"
