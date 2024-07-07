@@ -25,6 +25,5 @@
       "containerPort": 80
     }
   ],
-  "taskDefinition": "httpd:7",
   "launchType": "FARGATE"
 }
