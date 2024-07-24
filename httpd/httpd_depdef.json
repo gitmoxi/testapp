@@ -16,5 +16,11 @@
         ],
         "enable": true,
         "rollback": false
-    }
+    },
+    "gmDeploymentCircuitBreaker": {
+        "rollback": false,
+        "failureThreshold": 5,
+        "pollInterval": 30,
+        "timeout": 150
+    },
 }
