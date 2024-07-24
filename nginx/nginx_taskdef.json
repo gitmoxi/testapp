@@ -1,10 +1,10 @@
 {
-    "family" : "httpd",
+    "family" : "nginx",
     "networkMode": "awsvpc",
     "containerDefinitions": [
         {
             "name": "nginx-container",
-            "image": "public.ecr.aws/docker/library/httpd:alpine3.20",
+            "image": "public.ecr.aws/nginx/nginx:latest",
             "essential": true,
             "portMappings": [
                 {
