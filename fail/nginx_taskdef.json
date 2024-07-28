@@ -6,6 +6,8 @@
             "name": "fail-nginx-container",
             "image": "public.ecr.aws/nginx/nginx:latest",
             "essential": true,
+	    "entryPoint": ["/bin/sh", "-c"],
+      	    "command": ["exit 1"],	
             "portMappings": [
                 {
                     "containerPort": 80,
