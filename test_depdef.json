@@ -1,0 +1,27 @@
+{
+    "trafficShiftingConfig": {
+        "percent": -30,
+        "waitInterval": -60,
+        "type" : "CANARY",
+        "preShiftStabilityCheck":{
+            "pollInterval": -30,
+            "timeout": -10
+        }
+    },
+    "targetGroupArns": [
+        "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
+        "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/test-tg/4116dc0c8c0fe683"
+    ],
+    "alarms": {
+        "alarmNames": [
+            "string"
+        ],
+        "enable": true,
+        "rollback": false
+    },
+    "gmDeploymentCircuitBreaker": {
+        "failureThreshold": -5,
+        "pollInterval": -300,
+        "timeout": 0
+    }
+}
