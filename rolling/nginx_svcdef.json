@@ -1,6 +1,6 @@
 {
   "cluster": "test",
-  "serviceName": "nginx-svc",
+  "serviceName": "rolling-nginx-svc",
   "desiredCount": 2,
   "deploymentController": {
     "type": "ECS"
