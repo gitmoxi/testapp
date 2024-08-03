@@ -1,0 +1,29 @@
+{
+  "cluster": "test",
+  "serviceName": "new-nginx-svc",
+  "desiredCount": 2,
+  "deploymentController": {
+    "type": "EXTERNAL"
+  },
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": [
+        "subnet-0402dfe3a12ec4136",
+        "subnet-0844352edb38a385b",
+        "subnet-09cbc7bda54202df0"
+      ],
+      "assignPublicIp": "ENABLED",
+      "securityGroups": [
+        "sg-0198019c2b492f273"
+      ]
+    }
+  },
+  "loadBalancers": [
+    {
+      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
+      "containerPort": 80,
+      "containerName": "nginx-container"
+    }
+  ],
+  "launchType": "FARGATE"
+}
