@@ -1,7 +1,7 @@
 {
   "cluster": "test",
   "serviceName": "gm-backend-svc",
-  "desiredCount": 2,
+  "desiredCount": 1,
   "deploymentController": {
     "type": "EXTERNAL"
   },
