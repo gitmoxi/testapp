@@ -53,5 +53,8 @@
     "memory": "2048",
     "requiresCompatibilities": [
         "FARGATE"
-    ]
+    ],
+    "runtimePlatform": {
+        "cpuArchitecture": "ARM64"
+    }
 }
