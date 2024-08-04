@@ -14,10 +14,6 @@
                 {
                     "containerName": "redis",
                     "condition": "START"
-                },
-                {
-                    "containerName": "dynamodb-local",
-                    "condition": "START"
                 }
             ],
             "logConfiguration": {
