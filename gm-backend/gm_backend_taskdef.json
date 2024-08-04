@@ -4,8 +4,6 @@
             "name": "gm-backend",
             "image": "381491902283.dkr.ecr.us-east-2.amazonaws.com/gm-backend:v0.1",
             "essential": true,
-            "memory": 4096,
-            "cpu": 1024,
             "portMappings": [
                 {
                     "containerPort": 8080,
@@ -35,8 +33,6 @@
             "name": "redis",
             "image": "redis:latest",
             "essential": true,
-            "memory": 1024,
-            "cpu": 512,
             "portMappings": [
                 {
                     "containerPort": 6379,
