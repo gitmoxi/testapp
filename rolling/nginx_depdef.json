@@ -3,6 +3,6 @@
         "rollback": true,
         "failureThreshold": 5,
         "pollInterval": 30,
-        "timeout": 150
+        "timeout": 180
     }
 }
