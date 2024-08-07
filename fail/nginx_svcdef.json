@@ -1,6 +1,6 @@
 {
   "cluster": "test",
-  "serviceName": "fail-nginx-svc",
+  "serviceName": "nginx-svc",
   "desiredCount": 5,
   "deploymentController": {
     "type": "ECS"

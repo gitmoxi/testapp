@@ -1,8 +1,6 @@
 {
     "gmDeploymentCircuitBreaker": {
         "rollback": true,
-        "failureThreshold": 3,
-        "pollInterval": 10,
-        "timeout": 150
+        "failureThreshold": 2
     }
 }
