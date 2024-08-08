@@ -15,5 +15,6 @@
     "gmDeploymentCircuitBreaker": {
         "rollback": true,
         "failureThresholdPercent": 25
-    }    
+    },
+    "initialScale": 45
 }
