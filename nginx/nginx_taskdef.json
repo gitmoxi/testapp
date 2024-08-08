@@ -4,10 +4,8 @@
     "containerDefinitions": [
         {
             "name": "nginx-container",
-            "image": "public.ecr.aws/nginx/nginx:latest",
+            "image": "public.ecr.aws/docker/library/httpd:alpine3.20",
             "essential": true,
-            "entryPoint": ["/bin/sh", "-c"],
-      	    "command": ["exit 1"],
             "portMappings": [
                 {
                     "containerPort": 80,
