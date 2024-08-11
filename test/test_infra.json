@@ -4,7 +4,6 @@
         "subnet-0844352edb38a385b",
         "subnet-09cbc7bda54202df0"
     ],
-    "awslogs_group": "/ecs/nginx",
     "execution_role_arn": "arn:aws:iam::381491902283:role/ECSTaskExecutionRole"
 
 }
