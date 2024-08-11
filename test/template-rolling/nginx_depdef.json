@@ -1,0 +1,5 @@
+{
+    "stabilityCheck": {
+        "timeout" : 60
+    }
+}
