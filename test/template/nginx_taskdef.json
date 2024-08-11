@@ -28,5 +28,5 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "executionRoleArn": "{{execution_role_arn}}"
+    "executionRoleArn": "{execution_role_arn}}"
 }
