@@ -1,9 +1,5 @@
 {
     "trafficShiftingConfig": {
-        "preShiftStabilityCheck": { 
-            "pollInterval": 20, 
-            "timeout": 100 
-        },
         "percent": 30,
         "waitInterval": 60,
         "type" : "CANARY"
@@ -12,4 +8,5 @@
         "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
         "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/test-tg/4116dc0c8c0fe683"
     ]
+    
 }
