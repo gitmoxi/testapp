@@ -14,12 +14,5 @@
       ]
     }
   },
-  "loadBalancers": [
-    {
-      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
-      "containerPort": {{container_port}},
-      "containerName": "nginx-container"
-    }
-  ],
   "launchType": "FARGATE"
 }
