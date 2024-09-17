@@ -4,5 +4,6 @@
     },
     "nginx_container_image": "public.ecr.aws/nginx/nginx:latest",
     "container_port": 80,
-    "awslogs_group": "/ecs/nginx"
+    "awslogs_group": "/ecs/nginx",
+    "awslogs_region": "us-east-1"
 }
