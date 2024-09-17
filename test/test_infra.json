@@ -10,7 +10,6 @@
     "sgroups": [
         "sg-086dc827861d8170e"
     ],
-    "region": "us-east-1",
     "execution_role_arn": "arn:aws:iam::381491902283:role/ECSTaskExecutionRole"
 
 }
