@@ -11,5 +11,4 @@
         "sg-086dc827861d8170e"
     ],
     "execution_role_arn": "arn:aws:iam::381491902283:role/ECSTaskExecutionRole"
-
 }
