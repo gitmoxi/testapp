@@ -17,7 +17,7 @@
                 "logDriver": "awslogs",
                 "options": {
                     "awslogs-group": "{{awslogs_group}}",
-                    "awslogs-region": "us-east-2",
+                    "awslogs-region": "{{awslogs_region}}",
                     "awslogs-stream-prefix": "ecs"
                 }
             }
@@ -28,5 +28,5 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "executionRoleArn": "{execution_role_arn}}"
+    "executionRoleArn": "{{execution_role_arn}}"
 }

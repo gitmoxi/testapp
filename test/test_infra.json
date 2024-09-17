@@ -1,10 +1,16 @@
 { 
     "subnets": [
-        "subnet-0402dfe3a12ec4136",
-        "subnet-0844352edb38a385b",
-        "subnet-09cbc7bda54202df0"
+        "subnet-044ece05f037fe7e7",
+        "subnet-010b3c467c29eaab3",
+        "subnet-00caa9afca4163979",
+        "subnet-0995b78c4cb6127a0",
+        "subnet-09480d897e2ec1c8b",
+        "subnet-0c29b3b2f42148871"
     ],
-    "awslogs_group": "/ecs/nginx",
+    "sgroups": [
+        "sg-086dc827861d8170e"
+    ],
+    "region": "us-east-1",
     "execution_role_arn": "arn:aws:iam::381491902283:role/ECSTaskExecutionRole"
 
 }

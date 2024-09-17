@@ -1,5 +1,14 @@
 {
     "stabilityCheck": {
-        "timeout" : 60
+        "timeoutPerTask" : 25,
+        "timeout" : 220
+    },
+    "gmDeploymentCircuitBreaker": {
+        "rollback": true,
+        "failureThresholdPercent": 50
+    },
+    "environment": {
+        "region": "us-east-1",
+        "account": "381491902283"
     }
 }
