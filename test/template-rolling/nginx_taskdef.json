@@ -4,20 +4,20 @@
     "containerDefinitions": [
         {
             "name": "nginx-container",
-            "image": "public.ecr.aws/nginx/nginx:latest",
+            "image": "{{nginx_container_image}}",
             "essential": true,
             "portMappings": [
                 {
-                    "containerPort": 80,
-                    "hostPort": 80,
+                    "containerPort": {{nginx_container_port}},
+                    "hostPort": {{nginx_container_port}},
                     "protocol": "tcp"
                 }
             ],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "{{awslogs_group}}",
-                    "awslogs-region": "{{awslogs_region}}",
+                    "awslogs-group": "{{cloudwatch_log_group_name}}",
+                    "awslogs-region": "{{cloudwatch_log_group_region}}",
                     "awslogs-stream-prefix": "ecs"
                 }
             }
@@ -28,5 +28,5 @@
     ],
     "cpu": "256",
     "memory": "512",
-    "executionRoleArn": "{{execution_role_arn}}"
+    "executionRoleArn": "{{task_execution_role_arn}}"
 }

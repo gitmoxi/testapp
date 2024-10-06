@@ -8,7 +8,7 @@
         "failureThresholdPercent": 50
     },
     "environment": {
-        "region": "us-east-1",
-        "account": "381491902283"
+        "region": "{{cluster_region}}",
+        "account": "{{cluster_account}}"
     }
 }

@@ -1,15 +1,15 @@
 {
-  "cluster": "test",
+  "cluster": "{{ cluster_name }}",
   "serviceName": "t-rolling-nginx-svc",
-  "desiredCount": 5,
+  "desiredCount": 2,
   "deploymentController": {
     "type": "ECS"
   },
   "networkConfiguration": {
     "awsvpcConfiguration": {
-      "subnets": {{ subnets | tojson }},
+      "subnets": {{ public_subnets | tojson }},
       "assignPublicIp": "ENABLED",
-      "securityGroups": {{ sgroups | tojson }}
+      "securityGroups": {{ allow_web_security_group_arns | tojson }}
     }
   },
   "launchType": "FARGATE"

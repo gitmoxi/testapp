@@ -1,9 +1,12 @@
 {
     "ref" : {
-        "file" : "test/test_infra.json"
+        "file" : ["terraform/core-infra/core_infra_output.json"],
+        "type" : "TERRAFORM"
     },
     "nginx_container_image": "public.ecr.aws/nginx/nginx:latest",
-    "container_port": 80,
-    "awslogs_group": "/ecs/nginx",
-    "awslogs_region": "us-east-1"
+    "nginx_container_port": 80,
+    "cloudwatch_log_group_region": "us-west-2",
+    "cluster_region": "us-west-2",
+    "cluster_account": "381491902283"
+
 }
