@@ -9,9 +9,8 @@
     "awsvpcConfiguration": {
       "subnets": {{ public_subnets | tojson }},
       "assignPublicIp": "ENABLED",
-      "securityGroups": {{ allow_web_security_group_arns | tojson }}
+      "securityGroups": {{ allow_web_security_group_ids | tojson }}
     }
   },
   "launchType": "FARGATE"
 }
-

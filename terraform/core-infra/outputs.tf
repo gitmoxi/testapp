@@ -26,9 +26,9 @@ output "private_subnets_cidr_blocks" {
 # Security Groups
 ################################################################################
 
-output "allow_web_security_group_arns" {
+output "allow_web_security_group_ids" {
   description = "The ARNs of the created security groups"
-  value       = [for sg in values(aws_security_group.allow_web) : sg.arn]
+  value       = [for sg in values(aws_security_group.allow_web) : sg.id]
 }
 
 ################################################################################

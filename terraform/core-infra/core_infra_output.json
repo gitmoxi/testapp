@@ -1,5 +1,5 @@
 {
-  "allow_web_security_group_arns": {
+  "allow_web_security_group_ids": {
     "sensitive": false,
     "type": [
       "tuple",
@@ -8,7 +8,7 @@
       ]
     ],
     "value": [
-      "arn:aws:ec2:us-west-2:381491902283:security-group/sg-0e515fba9bc488e03"
+      "sg-0e515fba9bc488e03"
     ]
   },
   "cloudwatch_log_group_name": {
