@@ -16,7 +16,7 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "{{MyEcsStack.LogGroupOutput}}",
+                    "awslogs-group": "{{MyEcsStack.LogGroupNameOutput}}",
                     "awslogs-region": "{{cloudwatch_log_group_region}}",
                     "awslogs-stream-prefix": "ecs"
                 }

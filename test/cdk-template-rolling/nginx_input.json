@@ -1,6 +1,6 @@
 {
     "ref" : {
-        "file" : ["cdk/core_infra_output.json"],
+        "file" : ["cdk/output_core_infra.json"],
         "type" : "CDK"
     },
     "nginx_container_image": "public.ecr.aws/nginx/nginx:latest",
