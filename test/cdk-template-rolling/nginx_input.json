@@ -1,0 +1,12 @@
+{
+    "ref" : {
+        "file" : ["cdk/core_infra_output.json"],
+        "type" : "CDK"
+    },
+    "nginx_container_image": "public.ecr.aws/nginx/nginx:latest",
+    "nginx_container_port": 80,
+    "cloudwatch_log_group_region": "us-east-2",
+    "cluster_region": "us-east-2",
+    "cluster_account": "381491902283"
+
+}

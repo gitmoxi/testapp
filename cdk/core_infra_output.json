@@ -1,0 +1,9 @@
+{
+  "MyEcsStack": {
+    "ClusterNameOutput": "MyCluster",
+    "SecurityGroupIdOutput": "[\"sg-00f217e8240fa2b1c\"]",
+    "TaskExecutionRoleArnOutput": "arn:aws:iam::381491902283:role/MyTaskExecutionRole",
+    "PublicSubnetIdsOutput": "[\"subnet-0c13c93dd14e7b50c\", \"subnet-0c9a5b6c67a4b16b4\"]",
+    "LogGroupNameOutput": "/ecs/my-cluster"
+  }
+}

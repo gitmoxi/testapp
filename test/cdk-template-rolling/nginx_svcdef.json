@@ -1,0 +1,16 @@
+{
+  "cluster": "{{ MyEcsStack.ClusterNameOutput }}",
+  "serviceName": "t-rolling-nginx-svc",
+  "desiredCount": 2,
+  "deploymentController": {
+    "type": "ECS"
+  },
+  "networkConfiguration": {
+    "awsvpcConfiguration": {
+      "subnets": {{ MyEcsStack.PublicSubnetIdsOutput | tojson }},
+      "assignPublicIp": "ENABLED",
+      "securityGroups": {{ MyEcsStack.SecurityGroupIdOutput | tojson }}
+    }
+  },
+  "launchType": "FARGATE"
+}

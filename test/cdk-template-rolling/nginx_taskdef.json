@@ -1,0 +1,32 @@
+{
+    "family" : "nginx",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "nginx-container",
+            "image": "{{nginx_container_image}}",
+            "essential": true,
+            "portMappings": [
+                {
+                    "containerPort": {{nginx_container_port}},
+                    "hostPort": {{nginx_container_port}},
+                    "protocol": "tcp"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "{{MyEcsStack.LogGroupOutput}}",
+                    "awslogs-region": "{{cloudwatch_log_group_region}}",
+                    "awslogs-stream-prefix": "ecs"
+                }
+            }
+        }
+    ],
+    "requiresCompatibilities": [
+        "FARGATE"
+    ],
+    "cpu": "256",
+    "memory": "512",
+    "executionRoleArn": "{{MyEcsStack.TaskExecutionRoleArnOutput}}"
+}
