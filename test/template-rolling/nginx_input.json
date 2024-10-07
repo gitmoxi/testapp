@@ -1,6 +1,6 @@
 {
     "ref" : {
-        "file" : ["terraform/core-infra/core_infra_output.json"],
+        "file" : ["terraform/core_infra_output.json"],
         "type" : "TERRAFORM"
     },
     "nginx_container_image": "public.ecr.aws/nginx/nginx:latest",
