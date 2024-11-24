@@ -1,0 +1,88 @@
+{
+  "allow_web_security_group_ids": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string"
+      ]
+    ],
+    "value": [
+      "sg-07a08b6b46b166c9f"
+    ]
+  },
+  "cloudwatch_log_group_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "/ecs/nginx"
+  },
+  "cluster_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:ecs:us-west-2:381491902283:cluster/terraform"
+  },
+  "cluster_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:ecs:us-west-2:381491902283:cluster/terraform"
+  },
+  "cluster_name": {
+    "sensitive": false,
+    "type": "string",
+    "value": "terraform"
+  },
+  "private_subnets": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "subnet-02a27baadb6f973c4",
+      "subnet-0635bc15b4aea66f6",
+      "subnet-054c3551f15ebe34f"
+    ]
+  },
+  "private_subnets_cidr_blocks": {
+    "sensitive": false,
+    "type": [
+      "list",
+      "string"
+    ],
+    "value": [
+      "10.0.10.0/24",
+      "10.0.11.0/24",
+      "10.0.12.0/24"
+    ]
+  },
+  "public_subnets": {
+    "sensitive": false,
+    "type": [
+      "tuple",
+      [
+        "string",
+        "string",
+        "string"
+      ]
+    ],
+    "value": [
+      "subnet-0e57d7429e1b494a0",
+      "subnet-025aebfff44542149",
+      "subnet-0876e54b4006a8839"
+    ]
+  },
+  "task_execution_role_arn": {
+    "sensitive": false,
+    "type": "string",
+    "value": "arn:aws:iam::381491902283:role/GitmoxiTaskExecutionRole"
+  },
+  "vpc_id": {
+    "sensitive": false,
+    "type": "string",
+    "value": "vpc-0ad120d540165d1cf"
+  }
+}
