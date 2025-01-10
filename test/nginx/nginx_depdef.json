@@ -21,7 +21,8 @@
     "gmDeploymentCircuitBreaker": {
         "rollback": true,
         "failureThresholdPercent": 25
-    }
+    },
+    "fallbackCapacityProvider": "FARGATE"
 }
 
 

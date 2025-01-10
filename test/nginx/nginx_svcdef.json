@@ -25,7 +25,11 @@
       "containerName": "nginx-container"
     }
   ],
-  "launchType": "FARGATE"
-
+  "capacityProviderStrategy": [
+    {
+      "capacityProvider": "FARGATE_SPOT",
+      "weight": 1
+    }
+  ]
 }
 
