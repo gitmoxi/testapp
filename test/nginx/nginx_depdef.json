@@ -16,7 +16,7 @@
     },
     "stabilityCheck": {
         "timeoutPerTask" : 25,
-        "timeout" : 220
+        "timeout" : 300
     },
     "gmDeploymentCircuitBreaker": {
         "rollback": true,
@@ -24,6 +24,3 @@
     },
     "fallbackCapacityProvider": "FARGATE"
 }
-
-
-
