@@ -1,8 +1,10 @@
 {
-    "gmDeploymentCircuitBreaker": {
-        "rollback": true,
-        "failureThreshold": 5,
-        "pollInterval": 30,
-        "timeout": 180
+    "stabilityCheck" : { 
+                "pollInterval": 30, 
+                "timeout": 300
+    },
+    "gmDeploymentCircuitBreaker": { 
+                "rollback": false,
+                "failureThreshold": 5
     }
 }
