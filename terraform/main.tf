@@ -5,7 +5,7 @@ provider "aws" {
 data "aws_availability_zones" "available" {}
 
 locals {
-  name   = basename(path.cwd)
+  name   = "test"
   region = "us-west-2"
   cloudwatch_log_group_name = "/ecs/nginx"
   log_retention_in_days = 1
@@ -27,13 +27,12 @@ locals {
   azs      = slice(data.aws_availability_zones.available.names, 0, 3)
 
   tags = {
-    Blueprint  = local.name
-    GithubRepo = "github.com/aws-ia/ecs-blueprints"
+    Product = "Gitmoxi"
   }
 }
 
 ################################################################################
-# ECS Blueprint
+# ECS Cluster
 ################################################################################
 
 module "ecs_cluster" {
