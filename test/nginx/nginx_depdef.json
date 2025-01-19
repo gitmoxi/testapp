@@ -22,5 +22,10 @@
         "rollback": true,
         "failureThresholdPercent": 25
     },
-    "fallbackCapacityProvider": "FARGATE"
+    "fallbackCapacityProviderStrategy": [
+        {
+          "capacityProvider": "FARGATE",
+          "weight": 1
+        }
+    ]
 }
