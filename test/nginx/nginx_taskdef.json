@@ -4,7 +4,7 @@
     "containerDefinitions": [
         {
             "name": "nginx-container",
-            "image": "public.ecr.aws/nginx/ngnx:latest",
+            "image": "public.ecr.aws/nginx/nginx:latest",
             "essential": true,
             "portMappings": [
                 {
