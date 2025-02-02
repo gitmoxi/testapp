@@ -1,22 +1,22 @@
 {
     "trafficShiftingConfig": {
         "percent": 20,
-        "waitInterval": 30,
+        "waitInterval": 10,
         "type" : "LINEAR"
     },
-    "targetGroupArns": [
-        "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
-        "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/test-tg/4116dc0c8c0fe683"
-    ],
-    "alarms": {
-        "alarmNames": [
-            "nginx-cpu-high",
-            "nginx-memory-high"
+    "targetGroupArnPairs": [
+        [ 
+            "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
+            "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/test-tg/4116dc0c8c0fe683",
+        ],
+        [ 
+            "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/tg1/39559306d1d29011",
+            "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/tg2/4e652dcaf048fe35"
         ]
-    },
+    ],
     "stabilityCheck": {
-        "timeoutPerTask" : 25,
-        "timeout" : 300
+        "timeoutPerTask" : 30,
+        "timeout" : 150
     },
     "gmDeploymentCircuitBreaker": {
         "rollback": true,
