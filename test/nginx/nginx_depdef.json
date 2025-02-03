@@ -15,7 +15,7 @@
         ]
     ],
     "stabilityCheck": {
-        "timeoutPerTask" : 30,
+        "timeoutPerTask" : 10,
         "timeout" : 150
     },
     "gmDeploymentCircuitBreaker": {
