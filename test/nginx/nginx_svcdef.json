@@ -20,11 +20,6 @@
   },
   "loadBalancers": [
     {
-      "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/tg1/39559306d1d29011",
-      "containerPort": 80,
-      "containerName": "nginx-container"
-    },
-    {
       "targetGroupArn": "arn:aws:elasticloadbalancing:us-east-2:381491902283:targetgroup/prod-tg/4de5148873019c96",
       "containerPort": 80,
       "containerName": "nginx-container"
@@ -36,6 +31,5 @@
       "weight": 1
     }
   ]
-
 }
 
