@@ -27,6 +27,14 @@
           "capacityProvider": "FARGATE",
           "weight": 1
         }
+    ],
+    "webhooks": [
+        {
+            "name": "slack",
+            "urls": [
+                "https://hooks.slack.com/services/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"
+            ],
+            "payload_template": {"text": "{message} at {stage}"}
+        }
     ]
 }
-    
