@@ -1,0 +1,16 @@
+{
+  "alias": "PROD",
+  "trafficShiftingEnabled": true,
+  "trafficShiftingConfig": {
+    "percent": 50,
+    "waitInterval": 60,
+    "type" : "CANARY"
+  },
+  "environmentVariables": {
+    "region": "us-east-1"
+  },
+  "readinessCheck": {
+    "waitInterval": 10,
+    "maxRetries": 5
+  }
+}
