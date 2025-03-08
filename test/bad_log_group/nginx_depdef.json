@@ -1,0 +1,12 @@
+{
+    "stabilityCheck": { 
+        "pollInterval": 30, 
+        "timeout": 300, 
+        "timeoutPerTask" : 20
+    },
+    "gmDeploymentCircuitBreaker": { 
+        "rollback": false,
+        "failureThreshold": 5,
+        "failureThresholdPercent" : 50
+    }
+}
