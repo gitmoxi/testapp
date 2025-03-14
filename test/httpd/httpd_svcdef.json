@@ -1,6 +1,6 @@
 {
   "cluster": "test",
-  "serviceName": "httpd-svc",
+  "serviceName": "new-httpd-svc",
   "desiredCount": 2,
   "deploymentController": {
     "type": "EXTERNAL"
