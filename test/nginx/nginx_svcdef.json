@@ -1,6 +1,6 @@
 {
   "cluster": "test",
-  "serviceName": "bg-nginx-svc",
+  "serviceName": "new-nginx",
   "desiredCount": 3,
   "deploymentController": {
     "type": "EXTERNAL"
